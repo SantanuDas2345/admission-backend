@@ -1,11 +1,12 @@
 {
   "development": {
     "username": "root",
-    "password": "myroot",
+    "password": "sant",
     "database": "school_db",
     "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
+    "dialect": "mysql",
+      "token": "44a943da73e6e11cbe70b52be43c7aa0be68ac677ca1161666e72149769de9b75ce691c24b7624cb1b31b68cfae8de60ebed888b2599e3ce6885cb2a25d7148a"
+    },
   "test": {
     "username": "root",
     "password": null,
