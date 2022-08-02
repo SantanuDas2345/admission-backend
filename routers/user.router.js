@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-import {createUser, updateUser, deleteUser, getUser, getAllUsers} from '../controller/users.controller.js';
+const {createUser, getAllUsers, getUser, deleteUser, updateUser} = require ('../controller/users.controllers.js');
 
 
 router.post('/create-user', createUser);

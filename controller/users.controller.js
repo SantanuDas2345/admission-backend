@@ -1,6 +1,3 @@
-const {sequelize, Users} = require('.././models');
-
-
 const createUser =  async(req, res) => {
     const {username, password, email, phone} = req.body;
     let pass;
@@ -60,4 +57,4 @@ const updateUser =  async (req, res) => {
     }
 };
 
-export {createUser, getAllUsers, getUser, updateUser, deleteUser};
+module.exports = {createUser, getAllUsers, getUser, deleteUser, updateUser};

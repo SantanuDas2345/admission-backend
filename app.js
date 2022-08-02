@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 
 const app = express();
 app.use(express.json())
+
 const {sequelize, Users} = require('./models');
 const env = process.env.NODE_ENV || 'development';
 const config = require('./config/config.json')[env];
