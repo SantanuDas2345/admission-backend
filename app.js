@@ -1,9 +1,11 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+var cors = require('cors')
 
 const app = express();
 app.use(express.json())
+app.use(cors());
 
 const {sequelize, Users} = require('./models');
 const env = process.env.NODE_ENV || 'development';
@@ -14,16 +16,20 @@ app.post('/login', async (req, res) => {
         const {username, password} = req.body;
         try {
             const user = await Users.findOne({where: {
-                username: username
+                username: username,
+                password: password
             }});
+            if(user ==  null) {
+              res.json({msg: 'No user found', error: true});
+            }
             const token = await jwt.sign({
                 exp: Math.floor(Date.now() / 1000) + (60 * 60),
                 user: username
             }, config.token);
-          res.json({
-            token: token,
-            user: user
-          });
+            res.json({
+              token: token,
+              user: user
+            });
         }catch(e) {
             res.json(e)
         }

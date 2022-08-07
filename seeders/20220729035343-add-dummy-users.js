@@ -16,7 +16,7 @@ module.exports = {
       {
         "id": 1,
         "username": "santanu",
-        "password": "$2b$10$xVOS7EQOsepKJbVabU6yneeqWhHq2TvIzWQRrZNzo6yhg/hlf6emO",
+        "password": "admin",
         "phone": "9509898978",
         "status": true,
         "email": "santanu@santanu.com",
@@ -27,7 +27,7 @@ module.exports = {
       {
         "id": 2,
         "username": "biswajit",
-        "password": "$2b$10$c3vq7x0Kc5K1PGKZw.BVGOs6ZBSyExNS2klEkBkcQS0UrtjX/HpYO",
+        "password": "admin",
         "phone": "9509898978",
         "status": true,
         "email": "biswajit@biswajit.com",
@@ -38,7 +38,7 @@ module.exports = {
       {
         "id": 3,
         "username": "admin",
-        "password": "$2b$10$9jfFmwOwS0f6JcNQUp2AUOAv4eGYEPUcEm8QYXeIWAOtsth0N3t82",
+        "password": "admin",
         "phone": "9509898978",
         "status": true,
         "email": "admin@amin.com",
