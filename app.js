@@ -95,7 +95,7 @@ app.listen({
     port: 8080
 }, async () => {
     console.log("App is running ...")
-  // await sequelize.sync({force:true});
+  //await sequelize.sync({force:true});
     await sequelize.authenticate();
 })
     
